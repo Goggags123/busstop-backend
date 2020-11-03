@@ -26,9 +26,9 @@ router.get("/api/gps", (req, res) => {
 		.limit(7)
 		.sort({ date: -1 })
 		.then((doc) => {
-			return res.status(201).json(doc);
+			res.status(201).json(doc);
 		})
 		.catch((err) => res.status(500).send(err));
-    res.send('Completed')
+    // res.send('Completed')
 });
 module.exports = router;
