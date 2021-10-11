@@ -1,8 +1,10 @@
+var express = require('express')
 var path = require('path')
 var serveStatic = require('serve-static')
 var router = require('./src/index.js')
 var bodyParser = require('body-parser')
 var app = express()
+
 app.use(serveStatic(path.join(__dirname, 'dist')))
 app.use(bodyParser.json());
 app.use(router)
