@@ -16,4 +16,4 @@ app.use((err,req,res,next)=>{
 })
 var port = process.env.PORT || 8000
 app.listen(port)
-console.log('server started on' + port)
+console.log('server started' + port)
