@@ -5,7 +5,7 @@ const GPSModel = require("./models/GPS.model");
 
 router.post("/api/gps", (req, res) => {
 	if (!req.body) {
-		return res.status(400).send("Request body is missing.")
+		return res.status(400).send("Request body is missing")
 	}
 	let model = GPSModel(req.body);
 	let date = new Date();
