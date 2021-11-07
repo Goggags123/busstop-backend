@@ -19,7 +19,7 @@ router.post("/api/gps", (req, res) => {
 			res.status(201).send(doc);
 		})
         .catch((err) => res.status(500).send(err));
-    res.send('Completed')
+    res.send('Complete')
 });
 router.get("/api/gps", (req, res) => {
 	GPSModel.find()
